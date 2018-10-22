@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
-const prefix = ("!");
+const prefix = ("/");
 
 bot.on('ready', function () {
 	console.log("Le bot est pret à etre utilisé !")
-	bot.user.setActivity('!inf').catch(console.error)
+	bot.user.setActivity('/help').catch(console.error)
   });
 // SEULEMENT POUR VOIR SI LE BOT EST PRET OU PAS 
 
@@ -21,7 +21,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', function (message) {
 	
-	if (message.content === prefix + "inf") {
+	if (message.content === prefix + "help") {
 		var help_embed = new Discord.RichEmbed()
 			.setTitle("INFORMATIONS")
 			.setColor('#00717D')
