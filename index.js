@@ -23,6 +23,7 @@ bot.on('message', function (message) {
 	
 	if (message.content === prefix + "help") {
 		var help_embed = new Discord.RichEmbed()
+			.setAuthor(user.getname(), null, user.getAvatarUrl()+"?size=256")
 			.setTitle("INFORMATIONS")
 			.setColor('#00717D')
 			.setDescription("Commands")
