@@ -25,8 +25,7 @@ bot.on('message', function (message) {
 		var help_embed = new Discord.RichEmbed()
 			.setTitle("HOW TO PLAY")
 			.setColor('#7d0c00')
-			.setDescription("Commands")
-			.addField("Please see in the Announcements channel")
+			.setDescription("Please see in the Announcements channel")
 		message.channel.sendEmbed(help_embed);
 		
 	}
