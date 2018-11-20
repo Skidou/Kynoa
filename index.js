@@ -28,6 +28,7 @@ bot.on('message', function (message) {
 			.setDescription("Commands")
 			.addField("Steam","[PAGE STEAM](https://store.steampowered.com/app/921960/Koliseum_Soccer_VR/)", true)
 			.addField("Kynoa","[KYNOA](https://kynoa.com/)", true)
+			.addField("How to play"," Go to annoucements discord channel ", true)
 		message.channel.sendEmbed(help_embed);
 		
 	}
