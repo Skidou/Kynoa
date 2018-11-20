@@ -23,25 +23,26 @@ bot.on('message', function (message) {
 	
 	if (message.content === prefix + "help") {
 		var help_embed = new Discord.RichEmbed()
-			.setTitle("INFORMATIONS")
-			.setColor('#00717D')
-			//.setDescription("Commands")
-			.addField("Steam","[PAGE STEAM](https://store.steampowered.com/app/921960/Koliseum_Soccer_VR/)", true)
-			.addField("Kynoa","[KYNOA](https://kynoa.com/)", true)
-			.addField("How to play"," Go to annoucements discord channel ", true)
+			.setTitle("HOW TO PLAY")
+			.setColor('#7d0c00')
+			.setDescription("Commands")
+			.addField("Please see in the Announcements channel")
 		message.channel.sendEmbed(help_embed);
 		
 	}
 	
 	if (message.content === prefix + "help") {
 		var help_embed = new Discord.RichEmbed()
-			.setTitle("HOW TO PLAY")
+			.setTitle("GENERAL INFORMATIONS")
 			.setColor('#00717D')
-			.setDescription("Commands")
-			.addField("Go to annoucements discord channel", true)
+			//.setDescription("Commands")
+			.addField("Steam","[PAGE STEAM](https://store.steampowered.com/app/921960/Koliseum_Soccer_VR/)", true)
+			.addField("Kynoa","[KYNOA](https://kynoa.com/)", true)
 		message.channel.sendEmbed(help_embed);
 		
 	}
+	
+	
 	
 	
 
